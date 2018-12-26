@@ -4,11 +4,13 @@ This is an experiment in finding out whether the native ES module `import` state
 from an external resource.
 
 ```js
-import * as qrcode from 'https://unpkg.com/qrcode-generator';
+import mod from 'https://cdn.jsdelivr.net/gh/TomasHubelbauer/js-import-external/mod.js';
+console.log(mod());
+// Prints 'it works'
 ```
 
 See the [**online demo**](https://tomashubelbauer.github.io/js-import-external/)
 
 ## The Conclusion
 
-Not sure yet.
+It works.
