@@ -20,6 +20,8 @@ try {
 void async function() {
   const qrcode = await import('https://unpkg.com/qrcode-generator/qrcode.js');
   console.log(qrcode);
+  console.log(qrcode());
+  
   const code = new qrcode(0, 'L');
   code.addData('QRCODE', 'Alphanumeric');
   code.make();
