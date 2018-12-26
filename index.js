@@ -1,4 +1,4 @@
-import * as mod from 'https://pastebin.com/raw/WMshMpAU';
+import * as mod from 'https://cors.io/?https://pastebin.com/raw/WMshMpAU';
 console.log(mod);
 
 //import * as qrcode from 'https://unpkg.com/qrcode-generator';
