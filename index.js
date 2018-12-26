@@ -19,6 +19,7 @@ try {
 
 try {
   void async function() {
+    // https://github.com/cozmo/jsQR/issues/107
     const jsQr = await import('https://unpkg.com/jsqr/dist/jsQR.js');
     console.log(jsQr);
     console.log(jsQr());
@@ -29,6 +30,7 @@ try {
 
 try {
   void async function() {
+    // https://github.com/kazuhikoarase/qrcode-generator/issues/65
     const qrcode = await import('https://unpkg.com/qrcode-generator/qrcode.js');
     console.log(qrcode);
     console.log(qrcode());
