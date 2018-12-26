@@ -1,6 +1,20 @@
 // Load using JSDelivr so that the origin is different (github,com vs github.io) and CORS/MIME is handled
-import * as mod from 'https://cdn.jsdelivr.net/gh/TomasHubelbauer/js-import-external/mod.js';
-console.log(mod(), mod);
+import * as dflt from 'https://cdn.jsdelivr.net/gh/TomasHubelbauer/js-import-external/mod.js';
+import mod from 'https://cdn.jsdelivr.net/gh/TomasHubelbauer/js-import-external/mod.js';
+console.log(dflt);
+console.log(mod);
+
+try {
+  console.log(dflt());
+} catch (error) {
+  console.log(error);
+}
+
+try {
+  console.log(mod());
+} catch (error) {
+  console.log(error);
+}
 
 //import * as qrcode from 'https://unpkg.com/qrcode-generator';
 //console.log(qrcode);
