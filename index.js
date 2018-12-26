@@ -17,13 +17,27 @@ try {
   console.log(error);
 }
 
-void async function() {
-  const qrcode = await import('https://unpkg.com/qrcode-generator/qrcode.js');
-  console.log(qrcode);
-  console.log(qrcode());
-  
-  const code = new qrcode(0, 'L');
-  code.addData('QRCODE', 'Alphanumeric');
-  code.make();
-  console.log(code.createASCII());
-}()
+try {
+  void async function() {
+    const jsQr = await import('https://unpkg.com/jsqr/dist/jsQR.js');
+    console.log(jsQr);
+    console.log(jsQr());
+  }()
+} catch (error) {
+  console.log(error);
+}
+
+try {
+  void async function() {
+    const qrcode = await import('https://unpkg.com/qrcode-generator/qrcode.js');
+    console.log(qrcode);
+    console.log(qrcode());
+
+    const code = new qrcode(0, 'L');
+    code.addData('QRCODE', 'Alphanumeric');
+    code.make();
+    console.log(code.createASCII());
+  }()
+} catch (error) {
+  console.log(error);
+}
